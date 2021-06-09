@@ -1,6 +1,7 @@
 <snippet>
 	<content><![CDATA[
-DB::connection()->enableQueryLog(); var_dump(DB::getQueryLog());
+\DB::connection()->enableQueryLog();
+echo '<pre>'; var_dump(\DB::getQueryLog());exit;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>dblog</tabTrigger>
